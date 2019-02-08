@@ -1,0 +1,1 @@
+## In A Brief History of Time, Hawking writes in non-technical terms about the structure, origin, development and eventual fate of the universe, which is the object of study of astronomy and modern physics
