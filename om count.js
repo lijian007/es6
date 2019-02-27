@@ -1,3 +1,5 @@
+ sortMap=require("./sortMap.js").sortMap
+
 const fs = require('fs')
 let book=fs.readFileSync('/Users/yulx/Documents/es6/old man and the sea.txt').toString().toLowerCase().replace(/[^ a-z]/g,'').replace('  ',' ')
 let words=book.split(" ")
@@ -14,15 +16,9 @@ for(let i=0;i<words.length;i++){
     }
     
 }
-map2=[...map.entries()].sort(function(a,b){
-    if (a[1]<b[1]) {
-        return 1
-    }else if(a[1]>b[1]) {
-        return -1
-    }else {
-        return 0;
-   }
-})
+
+
+map2=sortMap(map)
 //console.log(map2.length)
 //console.log(map2.slice(3000,3327))
 console.log(map2)
